@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        .container {
+            background-color:white;
+            max-width: 10000px;
+            height: 100%;
+            border-radius: 8px;
+        }
+        .comtainer > .menu{
+            position: absolute;
+
+        }
+
+        .h2 {
+            width: 200px;
+            height: 100px;
+        }
+
+
+        img {
+            display: block;
+            justify-content: center;
+            width: 100%;
+           
+        }
+        .menu{
+            /* position: relative; */
+            background-color: rgb(176, 60, 60);
+            height: 1020px;
+            width: 290px;
+            position: absolute;
+            top: 1px;
+            left: 250px;
+            position: fixed;
+        }
+        .dp{
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background-image: url("author-image.jpg");
+            position: absolute;
+            left: 20%;
+            top: 15%;
+            
+        }
+        h2{
+            color: whitesmoke;
+            position: absolute;
+            top: 160px;
+            left: 20px;
+        }
+        h3{
+            color: whitesmoke;
+            position: absolute;
+            top: 190px;
+            left: 28px;
+            font-size: small;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        nav {
+        position: absolute;
+        top: 400px;
+        /* left: 28px; */
+        width: 100%;
+        height: 100px;
+        color: rgb(248, 248, 248);
+        /* background-color: black; */
+        /* display: flex; */
+        align-items: center;
+        cursor: pointer;
+    }
+    a{
+        text-decoration: none;
+        color: whitesmoke;
+    }
+    .sl{
+        width: 100%;
+        height: 40px;
+        border: 2px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-left: none;
+        border-right: none;
+    }
+    .cir{
+            height: 30px;
+            width: 30px;
+            background-color:rgb(103, 93, 93);
+            /* border: 1px solid rgb(34, 27, 27); */
+            /* border-radius: 50%; */
+            cursor: pointer;
+        }
+        .icons{
+            position: absolute;
+            color: whitesmoke;
+            top: 600px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 100px;
+            display: inline-flex;
+            gap: 5px;
+        }
+        .icons > .cir{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+        }
+        h6{
+            color: white;
+            position: absolute;
+            top: 700px;
+            left: 50px;
+        }
+        .A1{
+            position: absolute;
+            top: 70px;
+            color: whitesmoke;
+            font-size: 40px;
+            left: 1000px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            /* border-bottom: 2px solid red; */
+            line-height: 60px;
+
+        }
+        .A2{
+            position: absolute;
+            top: 150px;
+            color: whitesmoke;
+            font-size: 18px;
+            left:700px;
+            font-family: Arial, Helvetica, sans-serif;
+            /* font-weight: bold; */
+            right: 50px;
+            line-height: 30px;
+        }
+        hr{
+            position: absolute;
+            top: 135px;
+            left: 1050px;
+        }
+        .S0 {
+            position: absolute;
+            top: 300px;
+            left: 600px;
+            display: grid;
+            grid-template-columns: auto auto;
+            /* width: 60%; */
+            gap: 0; 
+        }
+
+        .s1 {
+            width: 500px;
+            height: 340px;
+            border-radius: 2%;
+            margin: 0; 
+            padding: 0; 
+            color: whitesmoke;
+        }
+
+        .s2 {
+            font-size: 30px;
+            color: whitesmoke;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 35px;
+            margin: 0; 
+             
+        }
+        .s3{
+            font-size: large;
+            line-height: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+    
+        }
+        .ss{
+            width: 500px;
+            padding-left: 25px;
+        }
+        button{
+            height: 50px;
+            width: 150px;
+            background-color: whitesmoke;
+            color: rgb(203, 99, 54);
+            font-weight: bold;
+            border: transparent;
+            font-size: medium;
+        }
+        .pp{
+            padding-top: 50px;
+            width: 500px;
+        }.p2 {
+            font-size: 30px;
+            color: whitesmoke;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 35px;
+            margin: 0; 
+             
+        }
+        .p3{
+            font-size: large;
+            line-height: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+    
+        }
+        .riim{
+            position: absolute;
+            top: 420px;
+            left: 520px;
+            height: 300px;
+            width: 500px;
+            border: 10%;
+        }
+        .line{
+            position: absolute;
+            top: 380px;
+            left: 40px;
+            opacity: 0.6;
+
+        }
+        .hrr{
+            position: absolute;
+            top: 750px;
+            left: 40px;
+            opacity: 0.6;
+        }
+        .B1{
+            position: absolute;
+            top: 800px;
+            color: whitesmoke;
+            font-size: 38px;
+            left: 390px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            /* border-bottom: 2px solid red; */
+            line-height: 60px;
+
+        }
+         .hr3{
+            position: absolute;
+            top: 860px;
+            left: 530px;
+        } 
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 390px); 
+            grid-template-rows: repeat(2, 280px);    
+            column-gap: 10px; 
+            row-gap: 10px;   
+            padding: 10px;
+            top: 900px;
+            left: 100px;
+            position: absolute;
+        }
+        .grid-item {
+            position: relative; /* Ensures absolute positioning within grid items works */
+            width: 390px;
+            height: 280px;
+            background-color: rgb(70, 70, 70);
+            margin: 0; 
+            padding: 0;
+            
+        }
+        .img-x {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            height: 50px;
+            width: 50px;
+            opacity: 0.9;
+        }
+        .title-x {
+            position: absolute;
+            top: 95px;
+            left: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .text-x {
+            position: absolute;
+            top: 150px;
+            left: 40px;
+            width: 320px;
+            color: whitesmoke;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .hr4{
+            position: absolute;
+            top: 1550px;
+            left: 40px;
+            opacity: 0.6;
+        }
+        .B2{
+            position: absolute;
+            top: 1590px;
+            color: whitesmoke;
+            font-size: 38px;
+            left: 450px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            /* border-bottom: 2px solid red; */
+            line-height: 60px;
+
+        }
+        .hr5{
+            position: absolute;
+            top: 1650px;
+            left: 500px;
+        }
+        .pg{
+            position: absolute;
+            top: 1680px;
+            left: 100px;
+            color:whitesmoke;
+            font-size: large;
+            text-align-last: center;
+        }
+        .con{
+            position: absolute;
+            top: 1760px;
+            left: 400px;
+            color: whitesmoke;
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        .all{
+            /* position: absolute; */
+            top: 170px;
+            left: 320px;
+
+        } 
+
+        .grid2 {
+            display: grid;
+            grid-template-columns: repeat(2, 390px); 
+            grid-template-rows: repeat(4, 320px);    
+            column-gap: 10px; 
+            row-gap: 10px;   
+            padding: 10px;
+            position: absolute;
+            top: 1800px;
+            left:110px ;
+        }
+        .grid-item2 {
+            position: relative; 
+            width: 390px;
+            height: 280px;
+            background-color: aqua;
+            margin: 0; 
+            padding: 0; 
+            /* border-bottom: 1px solid black; */
+        }
+        .img-x2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .hr6{
+            position: absolute;
+            top: 2850px;
+            left: 50px;
+        }
+        .B3{
+            position: absolute;
+            top: 2900px;
+            color: whitesmoke;
+            font-size: 38px;
+            left: 440px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            /* border-bottom: 2px solid red; */
+            line-height: 60px;
+
+        }
+        .hr7{
+            position: absolute;
+            top: 2960px;
+            left: 510px;
+        }
+        .pgg{
+            position: absolute;
+            top: 3000px;
+            left: 100px;
+            color:whitesmoke;
+            font-size: large;
+            text-align-last: center;
+            font-family: Arial, Helvetica, sans-serif;
+            opacity: 0.7;
+        }
+        form{
+            position: absolute;
+            top: 3120px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 100px;
+            width: 80%;
+
+        }
+        input[type=text] {
+        width: 385px;
+        height: 50px;
+        padding: 19px 26px;
+        margin: 10px 0;
+        box-sizing: border-box;
+        border: none;
+        background-color: transparent;
+        color: white;
+        border: 1px solid rgb(255, 255, 255);
+        /* display: inline; */
+        }
+        input[type=email] {
+        width: 390px;
+        height: 50px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        background-color: transparent;
+        color: white;
+        border: 1px solid rgb(255, 253, 253);
+        }
+        input[type=subject] {
+        width: 820px;
+        /* position: fixed; */
+        height: 50px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        background-color: transparent;
+        color: white;
+        border: 1px solid rgb(255, 254, 254);
+        }
+        textarea{
+        width: 820px;
+        height: 200px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        /* position: fixed; */
+        box-sizing: border-box;
+        border: none;
+        background-color: transparent;
+        color: white;
+        border: 1px solid rgb(246, 236, 236);
+        }
+        input[type=submit] {
+        width: 120px;
+        height: 50px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        background-color: transparent;
+        color: white;
+        border: 1px solid rgb(255, 252, 252);
+        }
+        .limg{
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="./page-bg.jpg">
+        <img src="./page-bg.jpg">
+        <img src="./page-bg.jpg">
+        <img src="./page-bg.jpg">
+        <img class="limg" src="./page-bg.jpg">
+
+
+        <div class="menu">
+            <div class="dp">
+                <h2>Reflux Me</h2>
+                <h3>Web Designer</h3>
+            </div>
+        <nav>
+            <div class="sl">
+            <a href="#" class="side">About Me</a><br>
+            </div>
+            <div class="sl">
+            <a href="#" class="side">What I'm good at</a><br>
+            </div>
+            <div class="sl">
+            <a href="#" class="side">My Work</a><br>
+            </div>
+            <div class="sl">
+            <a href="#" class="side">Contact Me</a>
+            </div>
+        </nav>
+        <div class="icons">
+            <div class="cir"><i class="fa-brands fa-facebook"></i></div>
+            <div class="cir"><i class="fa-brands fa-google"></i></i></div>
+            <div class="cir"><i class="fa-brands fa-twitter"></i></i></div>
+            <div class="cir"><i class="fa-brands fa-linkedin"></i></i></div>
+            <div class="cir"><i class="fa-brands fa-discord"></i></i></i></div>
+        </div>
+        <h6>Copyright 2045 Reflux Design</h6>
+        </div>
+
+        <div class="A1">About Me</div>
+        <hr width="4.5%" size="3" color="red" noshade>
+        <!-- <div class="A3"></div> -->
+        <pre class="A2">This is a Bootstrap v4.2.1 CSS Template for you. Edit and use this layout for your site. Updated on 21 
+                                          May 2019 for repeated main menu HTML code.</pre>
+       
+
+        <div class="S0">
+            <div class="s"><img class="s1" src="./left-image.jpg" height="200px" width="25%" alt=""></div>
+            <div class="ss"><div class="s2">Reflux HTML CSS Template<div><br>
+                <div class="s3">Donec tristique feugiat lacus, at sollicitudin nunc euismod sed. Mauris viverra, erat non sagittis gravida, elit dui mollis ante, sit amet eleifend purus ligula eget eros. Sed tincidunt quam vitae neque pharetra dignissim eget ut libero.</div><br>
+                <button>READ MORE</button>
+            </div>
+            </div>
+        </div>
+        <hr class="line" width="100%" size="1" color="white" noshade>
+        <div class="P0">
+            <div class="pp"><div class="p2">Sed sagittis rhoncus velit<div><br>
+                <div class="p3">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum fermentum eleifend nibh, vitae sodales elit finibus pretium. Suspendisse potenti. Ut sollicitudin risus a sollicitudin semper.</div><br>
+                <button>READ MORE</button>
+            </div>
+        </div>
+        </div>
+
+        <img  class="riim" src="./right-image (1).jpg" alt="">
+        <hr class="hrr" width="100%" size="4" color="whitesmoke" noshade>
+
+        <div class="B1">What I'm Good At</div>
+        <hr class="hr3" width="4.5%" size="3" color="red" noshade>
+
+        <div class="grid">
+            <div class="grid-item">
+                <img class="img-x" src="./first-white-icon.png" alt="">
+                <h2 class="title-x">HTML5 & CSS3</h2>
+                <p class="text-x">Phasellus non convallis dolor. Integer tempor hendrerit arcu at bibendum. Sed ac ante non metus vehicula congue quis eget eros.</p>
+            </div>
+            <div class="grid-item">
+                <img class="img-x" src="./second-white-icon.png" alt="">
+                <h2 class="title-x">Creative Ideas</h2>
+                <p class="text-x">Proin lacus massa, eleifend sed fermentum in, dignissim vel metus. Nunc accumsan leo nec felis porttitor, ultricies faucibus purus mollis.</p>
+            </div>
+            <div class="grid-item">
+                <img class="img-x" src="./third-white-icon.png" alt="">
+                <h2 class="title-x">Easy Customize</h2>
+                <p class="text-x">Integer suscipit condimentum aliquet. Nam quis risus metus. Nullam faucibus quam eget arcu pretium tincidunt. Nam libero dui.</p>
+            </div>
+            <div class="grid-item">
+                <img class="img-x" src="./fourth-white-icon.png" alt="">
+                <h2 class="title-x">Admin Dashboard</h2>
+                <p class="text-x">Vivamus et dui a massa venenatis fringilla. Proin lacus massa, eleifend sed fermentum in, dignissim vel metus. Nunc accumsan leo nec felis porttitor.</p>
+            </div>
+        </div>
+        <hr class="hr4" width="100%" size="3" color="whitesmoke" noshade>
+
+        <div class="B2">MY Work</div>
+
+        <hr class="hr5" width="4.5%" size="3" color="red" noshade>
+
+        <p class="pg">Aenean sollicitudin ex mauris, lobortis lobortis diam euismod sit amet. Duis ac elit vulputate, lobortis arcu quis, vehicula mauris.</p>
+ 
+        <pre class="con"><div class="all" style="color: rgb(167, 14, 14);"></div>All     People     Nature     Animals </pre>
+
+        <div class="grid2">
+            <div class="grid-item2">
+                <img class="img-x2" src="./portfolio-01.jpg" alt="">
+            </div>
+            <div class="grid-item2">
+                <img class="img-x2" src="./portfolio-02.jpg" alt="">
+            </div>
+            <div class="grid-item2">
+                <img class="img-x2" src="./portfolio-03.jpg" alt="">
+            </div>
+            <div class="grid-item2">
+                <img class="img-x2" src="./portfolio-04 (1).jpg" alt="">
+            </div>
+            <div class="grid-item2">
+                <img class="img-x2" src="./portfolio-05.jpg" alt="">
+            </div>
+            <div class="grid-item2">
+                <img class="img-x2" src="./portfolio-06.jpg" alt="">
+            </div>
+        </div>
+        <hr class="hr6" width="100%" size="3" color="whitesmoke" noshade>
+
+        
+        <div class="B3">Contact Us</div>
+
+        <hr class="hr7" width="4.5%" size="3" color="red" noshade>
+
+        <p class="pgg">Fusce eget nibh nec justo interdum condimentum. Morbi justo ex, efficitur at ante ac, tincidunt maximus ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>        
+    
+
+        <form class="form">
+            <input type="text" placeholder="Name"> &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="email" placeholder="email">
+            <input type="subject" placeholder="subject">
+            <textarea name="MSG" id="" placeholder="Message"></textarea>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="submit" placeholder="submit">
+
+        </form>
+
+    </div>
+</body>
+</html>
